@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function Date(day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.getday = function () {
+            return this.day
+        };
+        this.setday = function (day) {
+            this.day = day
+        };
+        this.getmonth = function () {
+            return this.month
+        };
+        this.setmonth = function (month) {
+            this.month = month
+        };
+        this.getyear = function () {
+            return this.year
+        };
+        this.setyear = function (year) {
+            this.year = year
+        };
+        this.toString= function () {
+            return this.day + " /" + this.month + " /" + this.year
+        };
+        this.setdate = function (day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+    }
+    let date = new Date();
+    let setdate = date.setdate(20, 2, 1988);
+    let getDate = date.toString();
+    alert(getDate)
+</script>
+</body>
+</html>
